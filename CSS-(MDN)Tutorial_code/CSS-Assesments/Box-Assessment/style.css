@@ -1,0 +1,46 @@
+html {
+    font-family: sans-serif;
+  }
+  
+  /* Your CSS below here */
+div {
+    width: 200px;
+    height: 150px;
+    /* Will center box horizontally */
+    margin: auto;
+    padding: 25px;
+    /* The font size generaly is 16 pixels.
+        To convert 18 pixels to rems we can divide 18 pixels by 16 pixels fo rems,
+        so (18 / 16 pixecels per rem) = 1.125 rems */
+    font-size: 1.125 rem;
+    color: white;
+    text-align: center;
+    line-height: 5;
+    
+    /* A contrast color of the text and black text shadow. 
+        2px - > horizontal shadow
+        2px -> vertical shadow
+        1px -> blur shadow.
+        balck -> black shadow
+        */ 
+    text-shadow: 2px 2px 1px black;
+    /*border radius*/
+    border-radius: 5px; 
+    border: 1px solid darkred;
+    background-color: red;
+    
+    /* Linear semi-transparent black gradient*/
+    background-image: linear-gradient(
+      to bottome right,
+      rgb(0,0,0) 0%,
+      rgb(0,0,0.2) 30%,
+      rgb(0,0,0.2)
+    );
+    /* Box shadow */
+    /* First line -> statndard shadow*/
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    /* White shadow at top left*/
+    box-shadow: inset 4px 4px 6px white,
+                inset -4px -4px 6px black; /* Black shadow at bottom right*/
+}
+
